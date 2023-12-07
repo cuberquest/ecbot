@@ -1,0 +1,23 @@
+{
+  "name": "ecbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "lascyrx",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "djs-commander": "^0.0.50",
+    "dotenv": "^16.3.1",
+    "latest": "^0.2.0",
+    "mongoose": "^8.0.0",
+    "node": "^21.1.0",
+    "npm": "^10.2.4",
+    "passport-google-oauth20": "^2.0.0",
+    "pretty-ms": "^8.0.0"
+  }
+}
