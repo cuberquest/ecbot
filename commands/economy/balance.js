@@ -27,14 +27,14 @@ module.exports = {
     await interaction.deferReply();
 
     try {
-      let userProfile = await UserProfile.findOne({ userId: targetUserId });
+      let userProfile = await UserProfile.findOne({ userId: targetUserId, guildId: interaction.guild.id });
 
       if (!userProfile) {
         if (targetUserId === interaction.user.id) await interaction.editReply({
           content: "No user profile found.\nCreating new user profile..."
         });
 
-        userProfile = new UserProfile({ userId: targetUserId });
+        userProfile = new UserProfile({ userId: targetUserId, guildId: interaction.guild.id });
       }
 
       interaction.editReply(
